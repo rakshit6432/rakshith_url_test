@@ -50,6 +50,8 @@ app.get("/:shortUrl", async (req, res) => {
   shortUrl.clicks++;
   shortUrl.save();
 
+  res.redirect(shortUrl.full);
+});
 
 
 //DELETE
