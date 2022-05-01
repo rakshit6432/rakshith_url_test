@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "test": "test",
+    "build": "echo Test build completed!"
   },
+
   "author": "rakshith",
   "license": "ISC",
   "dependencies": {
