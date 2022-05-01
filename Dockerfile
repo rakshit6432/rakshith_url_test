@@ -1,13 +1,15 @@
-FROM node
+FROM node:latest
 
-WORKDIR /app
+RUN mkdir -p /usr/src/app
 
-COPY package.json .
+WORKDIR /usr/src/app
+
+COPY package.json /usr/src/app/
 
 RUN npm install
 
-COPY . .
+COPY . /usr/src/app
 
 EXPOSE 5000
 
-CMD ["node" "server.js"]
+CMD [ "node", "./bin/www" ]
