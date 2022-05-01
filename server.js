@@ -59,7 +59,9 @@ app.route("/remove/:id").get((req, res) => {
   const id = req.params.id;
   shortUrl.findByIdAndDelete(id, err => {
   if (err) return res.send(500, err);
-
+  res.redirect("/");
+  });
+  });
   
   
   //serve the pages on port 5000
