@@ -18,7 +18,8 @@
     "express-flash": "^0.0.2",
     "express-session": "^1.17.2",
     "mongoose": "^5.13.2",
-    "shortid": "^2.2.15"
+    "shortid": "^2.2.15",
+    "jest": "^27.0.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.10"
