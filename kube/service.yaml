@@ -4,10 +4,10 @@ metadata:
   name: url-rakshith
 spec:
   selector:
-    app: node-app 
+    app: node-app
   type: LoadBalancer
   ports:
-  - protocol: TCP
-    port: 5000
-    targetPort: 8080
-    nodePort: 31110
+    - protocol: TCP
+      port: 5000
+      targetPort: 8080
+      nodePort: 31110
