@@ -12,10 +12,10 @@ spec:
   template:
     metadata:
       labels:
-        app: node-app 
+        app: node-app
     spec:
       containers:
-      - name: node-app
-        image: 64320003/nodejs-demo:latest
-        ports:
-        - containerPort: 8080
+        - name: node-app
+          image: 64320003/nodejs-demo:latest
+          ports:
+            - containerPort: 8080
